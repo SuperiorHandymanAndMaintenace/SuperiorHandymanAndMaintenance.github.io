@@ -4,99 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link src="styles.css"></link>
 </head>
-<body id="index">
-    <nav >
-        <h4 class="nav"><a href="#index">Home</a></h4>
-        <h4 class='nav'><a href="#contact">Contact</a></h4>
-        <h4 class='nav'><a href="#gallery">Gallery</a></h4>
-    </nav>
-    <main name="nav">
-        <main id="title">
-            <a href="index.html"><h1 id="title">Superior Handyman and Maintenance</h1></a>
-            
-        </main id="title">
-        <section class="grid"> 
-            <article class="flow">
-                <h2>Plumbing</h2>
-                <p>
-                        Repairs and Upgrades
-                </p>
-            </article>
-            <article class="flow">
-                <h2>Carpentry</h2>
-                <p>
-                    We have years of Carpentry Experiance. Can do Upgrades and Repairs of any kind.
-                </p>        
-            </article>
-        </section>
-        <div class="div" id="contact"></div>
-        <section class="grid">
-            <article class="flow">
-                <h2>Contact</h2>
-                <p>
-                    You can Contact us at (906)458-2511 or Email us at SuperiorHandymanMaintenance@gmail.com
-                </p>        
-            </article>
-            <article>
-                        <form action="action_page.php">
-                      
-                          <label class="flow" for="fname">Name</label>
-                          <input class="flow"type="text" id="fname" name="name" pattern="[A-Za-z]+" placeholder="Your name.." required>
-                          <label class="flow"for "email">Email</label>
-                          <input type="email" id="email" name="email" placeholder="Enter your Email.." required> 
-                          
-                          <label class="flow"for="phone">Phone</label>
-                          <input class="flow"type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+<body>
+<nav>
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About Us">About Us</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Contact Us">Contact Us</a></li>
+        <li><a href="#Photos">Photos</a></li>
+    </ul>
+</nav>
+<h1 id="Home">
+        Welcome to Superior Handyman and Maintenance Services
+</h1>
+    <p2 id="About Us">
+        Here at Superior Handyman and Maintanence, we strive for quality and excellence! If you're looking for professionals who are ready to bring their best to the table every day, then look no further. We cover all your home Maintenance needs and yard work so you can have a beautiful home and atmosphere. Don't look anywhere else for your small construction projects or renovations. We have got you covered!
+    </p2>
+        <button href="Services" class="primary-button">Learn More</button>
+<h1 id="Services">
+        Services We Provide
+</h1>
+    <p1>
+        We offer a wide variety of services in order to suite all your needs. You can count on us for 
+        <ul>
+            <li>Plumbing</li>
+            <li> Flooring</li>
+            <li>Drywall</li>
+            <li>Siding</li>
+            <li>painting</li>
+            <li>small construction</li>
+            <li>landscaping</li>
+        </ul>
+        and more to fit all of your general Maintanence needs!
+    </p1>
+    <p2>Rely on us to do your small construction and carpentry repairs. We have years of expertise.</p2>
+    <p>No landscaping job is too small or big of a challenge. We do it all? Looking to have some trees' put in or some gravel laid or you want mulch down for a playground, just mowing the grass, anything!</p>
+    <p>We have the plumbing expertise to not only unclog any drain but fully replacing piping, installing sinks, showers, tubs, and dealing with outside drainage, we have got you covered.</p>
+    <p>If you're in need of anymore information on what services we provide, contact us!</p>
+<h1 id="Photos">Our Work In the UP</h1>
 
-                          
-                          <label class="flow"for="subject">Subject</label>
-                          <textarea class="flow"id="subject" name="subject" placeholder="Write something.." rows="4" cols="50" maxlength="500" style="height:200px" required pattern=""></textarea>
-                          <input class="flow"type="submit" value="Submit">
-                      
-                        </form>
-            </article>
+<div1 class="img"><img src="images.jpeg"></div1>
+   
+<button class="primary-button">See More</button>
+<h1 id="Contact Us">Contact Us</h1>
+    <p>You can Contact us at</p>
+    <p1>(906) 458-2511</p1> or Email us @</p>
+    <p1>SuperiorHandymanMaintenance@gmail.com</p1>
+    <h3>You can also leave us your information and a comment and we will get back to you as ASAP!</h3>
+    
+    <form id="Contact US" action="submit-comment.php" method="POST" class="comment-form">
+        <h3>Leave a Comment</h3>
+        <p>Tell us what you think of our website? How informative was our content and what could we do better? Is there anything we could add to make this page more helpful? Let us know and leave a comment!</p>
+        <div2 class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div2>
+        <div3 class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div3>
+        <div4 class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+        </div4>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
 
-        </section>
-    </main>
-    <div id="gallery"></div>
-    <main>
-        <section class="grid1">
-            <article class="flow1">
-                <img class="img" src="">
-            </article>
-            <article class="flow1">
-                <img class="img" src="">
-            </article>
-            <article class="flow1">
-                <img class="img" src="">
-            </article>
-            <article class="flow1">
-                <img class="img" src="">
-            </article>
-            <article class="flow1">
-                <img class="img" src="">
-            </article>
-            <article class="flow1">
-                <img class="img" src="">
-            </article>
-            <article class="flow1">
-                <img class="img" src="">
-            </article>
-            <article class="flow1">
-                <img class="img" src="">
-            </article>
-                
-        </section>
-    </main>
+
+
 </body>
-    <footer>
-        <div id="links">
-            <h5><a href="#">Help</a></h5>
-            <h5><a href="#">Privacy & Terms</a></h5>
-            <h5><a href="#">Terms & Conditions</a></h5>
-            </div>
-    </footer>
 </html>
+
