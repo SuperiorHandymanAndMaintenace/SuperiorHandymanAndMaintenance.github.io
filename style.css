@@ -31,7 +31,6 @@ body {
 
   p1 {
     font-size: 1.4rem;
-
     color: #000000;
   }
 
@@ -108,8 +107,6 @@ ul {
   list-style-type: none;
   text-decoration: none;
 }
-
-
 a {
   color: #10069c;
   margin-left: -0.4rem;
@@ -120,7 +117,6 @@ a {
   list-style-type: none;
   text-decoration: none;
 }
-
 
 @keyframes Bob {
   from {
@@ -134,13 +130,12 @@ a {
 }
 
 nav:hover {
-    
     text-rendering: inherit;
     color: #ffffff;
     text-transform: uppercase;
     transition: background-color 0.2s ease;
-
 }
+
 ul:hover {
   color: #000;
   transform:translateX(-0.2rem);
@@ -168,7 +163,6 @@ a:hover {
   color: #114ec9;
   margin-bottom: 20px;
   min-height: 700px;
-
 }
 
 .form-group {
@@ -262,7 +256,6 @@ textarea {
   object-fit: fill;
 }
 
-  
   #Social-Links, #Review-Links, #Other-Local-Businesses {
     padding: 2%;
     margin: 2%;
