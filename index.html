@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"></link>
-    <link src="styles.css"></link>
+    <title>Superior Handyman and Maintenance Services</title>
+    <meta name="description" content="Superior Handyman and Maintenance Services provides top-quality home maintenance, small construction, and landscaping services. Contact us for plumbing, flooring, drywall, siding, painting, and more.">
+    <meta name="keywords" content="handyman services, home maintenance, small construction, landscaping, plumbing, flooring, drywall, siding, painting">
+    <link rel="stylesheet" href="styles.css">
+    <link src="styles.css">
+    <link rel="icon" href="Business-icon.png" type="image/x-icon">
 </head>
 <body>
-<nav>
+<div class="image-container">
+    <img class="icon" src="Business-icon.png" alt="Image">
+</div>
+<nav class="navbar">
     <ul>
         <li><a href="#Home">Home</a></li>
         <li><a href="#About Us">About Us</a></li>
         <li><a href="#Services">Services</a></li>
         <li><a href="#Contact Us">Contact Us</a></li>
         <li><a href="#Photos">Photos</a></li>
+        <li><a href="#Reviews">Reviews</a></li>
     </ul>
 </nav>
 <h1 id="Home">
@@ -44,6 +51,7 @@
     <p2>Rely on us to do your small construction and carpentry repairs. We have years of expertise.</p2>
     <p>No landscaping job is too small or big of a challenge. We do it all? Looking to have some trees' put in or some gravel laid or you want mulch down for a playground, just mowing the grass, anything!</p>
     <p>We have the plumbing expertise to not only unclog any drain but fully replacing piping, installing sinks, showers, tubs, and dealing with outside drainage, we have got you covered.</p>
+    <p2>Ask Us about our Mobile Home Services and Winter Heat taping!</p2>
     <p>If you're in need of anymore information on what services we provide, contact us!</p>
 <h1 id="Photos">Our Work In the UP</h1>
 
@@ -74,8 +82,62 @@
         <button type="submit" class="submit-button">Submit</button>
     </form>
 
+    <form id="Reviews" action="submit-comment.php" method="POST" class="comment-form">
+        <h3>Leave a Review</h3>
+        <p>TIf you are a returning customer, tell us how you enjoyed our services and if everything was satisfactory!</p>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="comment">Review:</label>
+            <textarea id="comment" name="comment" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
 
+    <div1>
+        <h1 id="Reviews">
+            Our Customer Reviews
+        </h1>
+        <p>Be the first one to review our services. Add a review and it will be posted the following day.</p>
+    </div1>
+    
+    <footer>
+        <p>copyright 2023 Superior Handyman and Maintenance Services LLC</p>
+        <p><a>Terms and conditions</a></p>
+        <p><a>Policy</a></p>
+    </footer>
+    
+    <footer class="footer">
+        <div class="footer-row">
+          <div class="footer-column">
+            <h3 class="footer-heading">Connect with us</h3>
+            <p>Facebook</p>
+            <p>Google</p>
+            <p>Our Location</p>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Review Links</h3>
+            <p>Google Reviews</p>
+            <p>Local (FB) Reviews</p>
+            <p><a href="#Reviews">Local WS Reviews</a></p>
+            <p>Buissness Reviews</p>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Local Businesses We Support</h3>
+            <p><a href="https://www.facebook.com/DaisyJosIcecream">Daisy Jo's Ice Cream Parlor</a></p>
+            <p><a href="https://www.poppipizzeria.com/">Poppi's Pizzeria Mozzi</a></p>
+            <p><a href="https://www.facebook.com/brownsstore/?paipv=0&eav=AfYx-4q3JmD7DWbG9N6KARN0W4-aYBO_bGvdZ4OxJVb-QpScbJzF5TveUxe-9jze1wk&_rdr">Brown's Store</a></p>
+          </div>
+        </div>
+      </footer>
+      
+      
 
 </body>
 </html>
-
