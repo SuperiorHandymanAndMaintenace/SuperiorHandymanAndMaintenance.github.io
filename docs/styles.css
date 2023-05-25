@@ -1,5 +1,3 @@
-
-
 body {
     background-image: linear-gradient(to bottom, #4091fa, #ffffff);
     color: #333;
@@ -162,6 +160,26 @@ p2 {
   left:50%;
   top:50%;
   transform:translate(-50%,-50%);
+}
+
+.image {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+.image img {
+  width: 300px; /* Adjust the width to your desired size */
+  height: 180px; /* Adjust the height to your desired size */
+  object-fit: fill; /* Maintain the aspect ratio and crop if necessary */
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  .image img {
+    width: 100%; /* Make images occupy the full width on smaller screens */
+  }
 }
 
 .comment-form {
