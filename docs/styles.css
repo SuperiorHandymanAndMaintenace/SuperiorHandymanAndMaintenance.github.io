@@ -279,6 +279,7 @@ textarea {
 }
 
 footer {
+
   background-color: #1d5fe4;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -288,17 +289,18 @@ footer {
 .footer {
   background-color: #0a81e2;
   padding: 20px;
+  align-content: flex-start;
 }
 
 .footer-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
 }
 
 .footer-column {
   flex: 1;
-  margin-right: 20px;
+
 }
 
 .footer-heading {
@@ -307,8 +309,30 @@ footer {
   margin-bottom: 10px;
 }
 
+#hidden-text {
+  display: none;
+}
 
 #Social-Links, #Review-Links, #Other-Local-Businesses {
   padding: 2%;
   margin: 2%;
+}
+
+.terms {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+.terms-title {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(0, 37, 204);
+  font-weight: bolder;
+  font-size: 1.7rem;
+  text-decoration: underline;
+}
+
+.bold {
+  color: #3a069c;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
