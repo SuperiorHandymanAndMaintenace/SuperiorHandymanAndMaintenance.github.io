@@ -67,9 +67,9 @@ a {
 }
 
 nav:hover {
-    
+    background-color: #af7ddb;
     text-rendering: inherit;
-    color: #ffffff;
+    color: #a756dd;
     text-transform: uppercase;
     transition: background-color 0.2s ease;
 
@@ -82,7 +82,8 @@ ul:hover {
 
 a:hover {
   background-color: aliceblue;
-  border-radius: 30%;
+  border-radius: 50% 20% / 10% 40%;
+  border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
   overflow: hidden;
 }
 
@@ -93,6 +94,27 @@ h1 {
   font-weight: 700;
   margin-bottom: 1rem;
   animation: slideIn 1s ease;
+}
+
+h1:hover {
+  transform:translateX(-0.2rem);
+  transition: ease-in-out 200ms;
+  animation-name: bob;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bob {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 h2 {
@@ -154,16 +176,19 @@ p2 {
   }
   
 .imgcontainer {
-  perspective: 2000px;
-  width: 300px;
-  height: 400px;  
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
+  display: flex-box;
+  flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+.imgcontainer img:hover {
+  transform:translateX(-0.2rem);
+  transition: ease-in-out 200ms;
 }
 
 .image {
-  display: flex;
+  display: flex-box;
   flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
   justify-content: space-evenly;
   max-width: 100%;
@@ -173,6 +198,11 @@ p2 {
   width: 300px; /* Adjust the width to your desired size */
   height: 180px; /* Adjust the height to your desired size */
   object-fit: fill; /* Maintain the aspect ratio and crop if necessary */
+}
+
+.image:hover {
+  transform:translateX(-0.2rem);
+  transition: ease-in-out 200ms;
 }
 
 /* Media query for screens with a maximum width of 600px */
@@ -249,12 +279,14 @@ textarea {
 }
 
 footer {
-  color: rgb(1, 1, 2);
+  background-color: #1d5fe4;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
+
 .footer {
-  background-color: #f2f2f2;
+  background-color: #0a81e2;
   padding: 20px;
 }
 

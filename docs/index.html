@@ -12,8 +12,9 @@
     <link rel="icon" href="Business-icon.png" type="image/x-icon">
 </head>
 <body>
+<script src="script.js" type="text/javascript"></script>
 <div class="image-container">
-    <img class="icon" src="Business-icon.png" alt="Image">
+    <img id="img" class="icon" src="Business-icon.png" alt="Image" onmouseover="increase()" onmouseout="decrease()">
 </div>
 <nav class="navbar">
     <ul>
@@ -30,7 +31,7 @@
 </h1>
     <p2 id="About Us">
         Here at Superior Handyman and Maintanence, we strive for quality and excellence! If you're looking for professionals who are ready to bring their best to the table every day, then look no further. We cover all your home Maintenance needs and yard work so you can have a beautiful home and atmosphere. Don't look anywhere else for your small construction projects or renovations. We have got you covered!
-    </p2>
+    </p2><br>
         <button href="Services" class="primary-button">Learn More</button>
 <h1 id="Services">
         Services We Provide
@@ -55,7 +56,7 @@
     <p>If you're in need of anymore information on what services we provide, contact us!</p>
 <h1 id="Photos">Our Work In the UP</h1>
 
-<div1 class="img"><img src="images.jpeg"></div1>
+<div1 class="img"><img src="images.jpeg"></div1><br>
    
 <button class="primary-button">See More</button>
 <h1 id="Contact Us">Contact Us</h1>
@@ -69,6 +70,13 @@
     </div>
     <h3>You can also leave us your information and a comment and we will get back to you as ASAP!</h3>
     
+    <div1>
+        <h1 id="Reviews">
+            Our Customer Reviews
+        </h1>
+        <p>Be the first one to review our services. Add a review and it will be posted the following day.</p>
+    </div1>
+
     <form id="Contact US" action="submit-comment.php" method="POST" class="comment-form">
         <h3>Leave a Comment</h3>
         <p>Tell us what you think of our website? How informative was our content and what could we do better? Is there anything we could add to make this page more helpful? Let us know and leave a comment!</p>
@@ -106,14 +114,6 @@
     </form>
 
 
-
-    <div1>
-        <h1 id="Reviews">
-            Our Customer Reviews
-        </h1>
-        <p>Be the first one to review our services. Add a review and it will be posted the following day.</p>
-    </div1>
-
     <footer>
         
         <p>copyright 2023 Superior Handyman and Maintenance Services LLC</p>
@@ -125,16 +125,15 @@
         <div class="footer-row">
           <div class="footer-column">
             <h3 class="footer-heading">Connect with us</h3>
-            <p>Facebook</p>
+            <p><a href="https://www.facebook.com/profile.php?id=100093180458052">Facebook</a></p>
             <p>Google</p>
             <p>Our Location</p>
           </div>
           <div class="footer-column">
             <h3 class="footer-heading">Review Links</h3>
             <p>Google Reviews</p>
-            <p>Local (FB) Reviews</p>
+            <p><a href="https://www.facebook.com/profile.php?id=100093180458052&sk=reviews">Local (FB) Reviews</a></p>
             <p><a href="#Reviews">Local WS Reviews</a></p>
-            <p>Buissness Reviews</p>
           </div>
           <div class="footer-column">
             <h3 class="footer-heading">Local Businesses We Support</h3>
