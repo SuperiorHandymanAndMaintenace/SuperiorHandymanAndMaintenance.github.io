@@ -278,6 +278,14 @@ textarea {
   color: #11ddec;
 }
 
+.tn {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  color: green;
+}
+
 footer {
 
   background-color: #1d5fe4;
